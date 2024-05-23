@@ -1604,7 +1604,7 @@ router.get('/random/faktaunik', async (req, res, next) => {
 	if(!Apikey) return res.json(loghandler.notparam)
         if(listkey.includes(Apikey)){
 
-       fetch(encodeURI(`https://api.lolhuman.xyz/api/random/faktaunik?apikey=Fikrii`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/Akamaru69/Databasee/main/Random%20Text/faktaunix.txt`))
         .then(response => response.json())
         .then(hasil => {
         var result = hasil.result;
@@ -1648,7 +1648,7 @@ router.get('/random/pantun', async (req, res, next) => {
 	if(!Apikey) return res.json(loghandler.notparam)
         if(listkey.includes(Apikey)){
 
-       fetch(encodeURI(`https://saipulanuar.ga/api/random/pantun`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/Akamaru69/Databasee/main/Random%20Text/pantun.txt`))
         .then(response => response.json())
         .then(hasil => {
         var result = hasil.result;
